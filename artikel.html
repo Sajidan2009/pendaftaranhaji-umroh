@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & Artikel Umroh Haji - AS-SIDDIQ Travel</title>
+  <meta name="description" content="Portal edukasi, berita, tips perjalanan, doa manasik, dan cerita jamaah Haji & Umroh terpercaya dari AS-SIDDIQ Tour & Travel.">
+  <link rel="canonical" href="https://as-siddiqtravel.com/artikel.html">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Blog & Artikel AS-SIDDIQ Travel",
+    "description": "Panduan resmi ibadah Umroh dan Haji sesuai tuntunan Al-Qur'an dan Sunnah.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "PT AS-SIDDIQ Tour & Travel"
+    }
+  }
+  </script>
+</head>
+<body class="bg-islamic-pattern">
+
+  <!-- =========================================================================
+       NAVBAR (Fixed Top Following Scroll Seamlessly)
+       ========================================================================= -->
+  <nav class="navbar navbar-expand-lg navbar-assiddiq fixed-top" aria-label="Navigasi Utama">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <div class="logo-badge-icon">
+          <i class="fas fa-kaaba"></i>
+        </div>
+        <div>
+          <div class="brand-text-main">AS-SIDDIQ</div>
+          <div class="brand-text-sub">HAJI & UMROH PREMIUM</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html"><i class="fas fa-landmark me-1"></i> Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paket.html"><i class="fas fa-box-open me-1"></i> Paket Haji & Umrah</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="galeri.html"><i class="fas fa-images me-1"></i> Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="artikel.html"><i class="fas fa-newspaper me-1"></i> Artikel</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20CS%20AS-SIDDIQ,%20saya%20ingin%20mendaftar%20paket%20Umroh/Haji" target="_blank" class="btn btn-nav-wa">
+            <i class="fab fa-whatsapp"></i> Daftar Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION BLOG -->
+  <section class="page-hero-section text-center">
+    <div class="container position-relative" style="z-index: 2;">
+      <nav aria-label="breadcrumb" class="d-flex justify-content-center mb-3">
+        <ol class="breadcrumb bg-transparent p-0 m-0 text-white-50 small">
+          <li class="breadcrumb-item"><a href="index.html" class="text-warning">Beranda</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Blog & Artikel</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 font-weight-bold mb-2">Blog & Artikel</h1>
+      <p class="lead text-light opacity-90 max-w-700 mx-auto">
+        Kumpulan artikel edukatif, fikih manasik, doa-doa suci, tips perjalanan ke Tanah Suci, serta kisah inspiratif jamaah AS-SIDDIQ.
+      </p>
+    </div>
+  </section>
+
+  <!-- MAIN BLOG CONTAINER -->
+  <section class="py-5 bg-white">
+    <div class="container">
+
+      <!-- BLOG LIST VIEW CONTAINER -->
+      <div id="blogListView">
+        
+        <!-- FEATURED ARTICLE -->
+        <div id="featuredArticleContainer"></div>
+
+        <!-- SEARCH & FILTER BAR -->
+        <div class="row align-items-center g-3 mb-4">
+          <div class="col-lg-8">
+            <div class="d-flex flex-wrap gap-2" id="categoryFilterContainer">
+              <button type="button" class="blog-filter-pill active" data-category="Semua">Semua</button>
+              <button type="button" class="blog-filter-pill" data-category="Persiapan Umrah">Persiapan Umrah</button>
+              <button type="button" class="blog-filter-pill" data-category="Doa & Manasik">Doa & Manasik</button>
+              <button type="button" class="blog-filter-pill" data-category="Tips Perjalanan">Tips Perjalanan</button>
+              <button type="button" class="blog-filter-pill" data-category="Cerita Jamaah">Cerita Jamaah</button>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="input-group shadow-sm rounded-pill overflow-hidden border">
+              <span class="input-group-text bg-white border-0 ps-3 text-muted"><i class="fas fa-search"></i></span>
+              <input type="text" id="blogSearchInput" class="form-control border-0 pe-3" placeholder="Cari artikel, topik, atau kata kunci...">
+            </div>
+          </div>
+        </div>
+
+        <!-- GRID ARTIKEL -->
+        <div class="row g-4" id="articlesGrid"></div>
+
+        <!-- Empty Search Result Notice -->
+        <div id="noResultsNotice" class="text-center py-5 d-none">
+          <i class="fas fa-search fa-3x text-muted mb-3"></i>
+          <h4 class="font-weight-bold">Artikel Tidak Ditemukan</h4>
+          <p class="text-muted small">Coba gunakan kata kunci pencarian lain atau pilih kategori artikel yang berbeda.</p>
+        </div>
+
+        <!-- LOAD MORE BUTTON -->
+        <div class="text-center mt-5" id="loadMoreWrapper">
+          <button type="button" id="btnLoadMore" class="btn btn-outline-success px-5 py-2.5 rounded-pill font-weight-bold shadow-sm">
+            <i class="fas fa-spinner fa-spin me-2 d-none" id="loadMoreSpinner"></i> Tampilkan Lebih Banyak Artikel
+          </button>
+        </div>
+
+      </div>
+
+      <!-- HALAMAN DETAIL ARTIKEL -->
+      <div id="blogDetailView" class="d-none">
+        
+        <!-- Back to Blog Button -->
+        <div class="mb-4">
+          <button type="button" id="btnBackToBlog" class="btn btn-outline-success rounded-pill px-4">
+            <i class="fas fa-arrow-left me-2"></i> Kembali ke Daftar Blog
+          </button>
+        </div>
+
+        <div class="row g-5">
+          <div class="col-lg-8">
+            <article class="article-detail-card bg-white rounded-4 shadow-sm p-4 p-md-5 border">
+              
+              <!-- Badge & Meta Header -->
+              <div class="d-flex align-items-center gap-2 mb-3">
+                <span id="detailCategory" class="badge bg-success px-3 py-2">Kategori</span>
+                <span id="detailReadTime" class="text-muted small"><i class="far fa-clock text-warning me-1"></i> 5 Menit Baca</span>
+              </div>
+
+              <!-- Main Title -->
+              <h1 id="detailTitle" class="h2 font-weight-bold mb-3">Judul Artikel Lengkap</h1>
+
+              <!-- Author & Date Meta -->
+              <div class="d-flex align-items-center gap-3 text-muted small border-bottom pb-3 mb-4">
+                <span><i class="far fa-user text-warning me-1"></i> <strong id="detailAuthor">Ustadz Penulis</strong></span>
+                <span><i class="far fa-calendar-alt text-warning me-1"></i> <span id="detailDate">22 Juli 2026</span></span>
+              </div>
+
+              <!-- Main Hero Image -->
+              <div class="rounded-4 overflow-hidden mb-4 shadow-sm">
+                <img id="detailThumbnail" src="" alt="Artikel Banner" class="img-fluid w-100">
+              </div>
+
+              <!-- Table of Contents Accordion -->
+              <div class="toc-box">
+                <div class="toc-title" id="detailTocToggle">
+                  <span><i class="fas fa-list-ul me-2"></i> Daftar Isi Artikel (Table of Contents)</span>
+                  <button type="button" class="btn btn-sm btn-link text-success p-0"><i class="fas fa-chevron-up"></i> Sembunyikan</button>
+                </div>
+                <ul id="detailTocList" class="toc-list"></ul>
+              </div>
+
+              <!-- Article Content Body -->
+              <div id="detailContent" class="article-body-content leading-relaxed text-dark"></div>
+
+              <!-- Social Share (Twitter Removed) -->
+              <div class="border-top pt-4 mt-5">
+                <div class="share-buttons-wrapper">
+                  <span class="font-weight-bold text-muted small me-2"><i class="fas fa-share-alt me-1"></i> Bagikan Artikel Ini:</span>
+                  <a id="shareWa" href="#" target="_blank" class="btn-share btn-share-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                  <a id="shareFb" href="#" target="_blank" class="btn-share btn-share-fb"><i class="fab fa-facebook-f"></i> Facebook</a>
+                  <a id="shareTg" href="#" target="_blank" class="btn-share btn-share-tg"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                  <a id="shareIn" href="#" target="_blank" class="btn-share btn-share-in"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+              </div>
+
+              <!-- Author Bio Card -->
+              <div class="author-bio-card mt-4">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80" alt="Penulis Bio" class="author-bio-img">
+                <div>
+                  <h6 class="font-weight-bold mb-1" id="detailAuthorName">Ustadz H. Ahmad Ridwan, M.A.</h6>
+                  <p class="small text-success font-weight-bold mb-2">Tim Konsultan Fikih & Edukasi Ibadah AS-SIDDIQ</p>
+                  <p class="small text-muted mb-0">Alumnus Universitas Islam Madinah. Berpengalaman dalam membimbing jamaah dan menulis panduan syariah perjalanan ibadah suci.</p>
+                </div>
+              </div>
+
+            </article>
+          </div>
+
+          <!-- Sidebar Related Articles -->
+          <div class="col-lg-4">
+            <div class="position-sticky" style="top: 100px;">
+              <div class="p-4 bg-light rounded-4 border shadow-sm mb-4">
+                <h5 class="font-weight-bold mb-3 border-bottom pb-2"><i class="fas fa-newspaper me-2 text-warning"></i> Artikel Terkait</h5>
+                <div id="relatedArticlesContainer"></div>
+              </div>
+
+              <!-- Promo Banner WA -->
+              <div class="p-4 rounded-4 bg-success text-white text-center shadow-lg">
+                <i class="fab fa-whatsapp fa-3x text-warning mb-2"></i>
+                <h5 class="font-weight-bold mb-2">Konsultasi Pendaftaran</h5>
+                <p class="small text-light opacity-90 mb-3">Tanyakan jadwal dan rekomendasi paket umroh terbaik untuk Anda & keluarga.</p>
+                <a href="https://wa.me/6281234567890" target="_blank" class="btn btn-warning rounded-pill font-weight-bold w-100 text-dark shadow-gold">
+                  Chat WhatsApp CS
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-assiddiq">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="logo-badge-icon">
+              <i class="fas fa-kaaba"></i>
+            </div>
+            <span class="fs-4 font-weight-bold text-white font-arabic">AS-SIDDIQ TRAVEL</span>
+          </div>
+          <p class="small text-light opacity-75 mb-3">
+            PT AS-SIDDIQ Tour & Travel adalah Penyelenggara Perjalanan Ibadah Umrah (PPIU) resmi berizin Kemenag RI No. 412/2021. Berpengalaman melayani ribuan jamaah Indonesia sejak 2012.
+          </p>
+          <div class="d-flex">
+            <a href="https://wa.me/6281234567890" target="_blank" class="social-icon-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Menu Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right small text-warning"></i> Beranda</a></li>
+            <li><a href="tentang.html"><i class="fas fa-chevron-right small text-warning"></i> Tentang Kami</a></li>
+            <li><a href="paket.html"><i class="fas fa-chevron-right small text-warning"></i> Paket Haji & Umroh</a></li>
+            <li><a href="galeri.html"><i class="fas fa-chevron-right small text-warning"></i> Galeri Foto & Video</a></li>
+            <li><a href="artikel.html"><i class="fas fa-chevron-right small text-warning"></i> Artikel & Panduan</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Paket Favorit</h4>
+          <ul class="footer-links">
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Umroh Reguler Bintang 5</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Umroh Plus Turki Cappadokia</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Umroh Plus Dubai</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Haji Khusus VVIP Kuota Resmi</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Haji Furoda Visa Mujamalah</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Kontak & Jam Buka</h4>
+          <p class="small mb-2"><i class="fas fa-map-marker-alt text-warning me-2"></i> Jl. Raya Boulevard Barat No. 88, Kelapa Gading, Jakarta Utara</p>
+          <p class="small mb-2"><i class="fas fa-phone text-warning me-2"></i> +62 812-3456-7890</p>
+          <p class="small mb-2"><i class="fas fa-envelope text-warning me-2"></i> info@as-siddiqtravel.com</p>
+          <p class="small mb-0"><i class="fas fa-clock text-warning me-2"></i> Senin - Sabtu (08.00 - 17.00 WIB)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">Hak Cipta &copy; 2026 PT AS-SIDDIQ Tour & Travel Haji & Umroh. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CONTAINER -->
+  <div class="floating-container">
+    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20CS%20AS-SIDDIQ,%20saya%20ingin%20bertanya" target="_blank" class="btn-floating-wa" aria-label="Chat WhatsApp AS-SIDDIQ">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="scrollTopBtn" class="btn-scroll-top" aria-label="Scroll to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  
+  <script>
+    const articlesData = [
+      {
+        id: 1,
+        slug: "panduan-tata-cara-umroh-sesuai-sunnah",
+        featured: true,
+        category: "Doa & Manasik",
+        title: "Panduan Lengkap Tata Cara Ibadah Umroh Sesuai Sunnah Rasulullah SAW",
+        imgSrc: "assets/orangumroh.png",
+        summary: "Pelajari rukun umroh, syarat ihram di Miqat, tata cara thawaf di sekeliling Ka'bah, sa'i antara Shafa dan Marwah, hingga tahallul sesuai petunjuk shahih.",
+        date: "22 Juli 2026",
+        author: "Ustadz H. Ahmad Ridwan, M.A.",
+        readTime: "7 Menit Baca",
+        tags: ["manasik", "tata cara umroh", "sunnah", "doa"],
+        content: `
+          <img src="assets/orangumroh.png" alt="Panduan Lengkap Tata Cara Ibadah Umroh Sesuai Sunnah Rasulullah SAW" class="img-fluid mb-4">
+          <p class="lead">Menunaikan ibadah Umroh merupakan kerinduan setiap Muslim di seluruh dunia. Umroh sering disebut sebagai <em>Haji Asghar</em> (Haji Kecil) yang memiliki keutamaan luar biasa, di antaranya menghapuskan dosa-dosa di antara dua umroh.</p>
+
+          <h2 id="rukun-umroh">4 Rukun Utama Ibadah Umroh</h2>
+          <p>Sebelum melangkah ke Tanah Suci, calon jamaah wajib memahami Rukun Umroh yang tidak boleh ditinggalkan:</p>
+          <ul>
+            <li><strong>Niat Ihram:</strong> Berniat masuk ke dalam ritual umroh dari titik Miqat yang ditentukan (seperti Bir Ali).</li>
+            <li><strong>Thawaf:</strong> Mengelilingi Ka'bah sebanyak 7 kali putaran dimulai dari sudut Hajar Aswad.</li>
+            <li><strong>Sa'i:</strong> Berjalan dan berlari-lari kecil antara bukit Shafa dan Marwah sebanyak 7 kali perjalanan.</li>
+            <li><strong>Tahallul:</strong> Mencukur atau memotong sebagian rambut kepala sebagai tanda selesainya ihram.</li>
+          </ul>
+
+          <div class="islamic-quote">
+            "Antara umrah yang satu dengan umrah lainnya adalah penghapus dosa di antara keduanya. Dan haji yang mabrur tidak ada balasan baginya melainkan surga."
+            <div class="quote-author">— (HR. Bukhari No. 1773 & Muslim No. 1349)</div>
+          </div>
+
+          <h2 id="tahapan-ihram">Tahapan Pelaksanaan Ihram & Niat</h2>
+          <p>Mengenakan pakaian ihram (2 lembar kain putih tanpa jahitan untuk laki-laki, dan pakaian menutup aurat untuk wanita) kemudian shalat sunnah ihram 2 rakaat di Miqat. Mengucapkan lafaz niat:</p>
+          <p class="font-arabic fs-4 text-center text-success py-2">لَبَّيْكَ اللَّهُمَّ عُمْرَةً</p>
+          <p class="text-center italic small text-muted">"Labbaikallahumma 'umratan" (Aku penuhi panggilan-Mu ya Allah untuk menunaikan Umroh).</p>
+
+          <div class="tips-box">
+            <div class="tips-box-title"><i class="fas fa-lightbulb"></i> Tips Khusyuk Jamaah:</div>
+            Perbanyak membaca Kalimat Talbiyah sepanjang perjalanan dari Miqat menuju Kota Makkah sebelum memulai Thawaf.
+          </div>
+
+          <h2 id="kesimpulan">Kesimpulan</h2>
+          <p>Kunci kesempurnaan ibadah Umroh terletak pada keikhlasan niat dan pemahaman fikih yang benar sesuai sunnah Rasulullah SAW.</p>
+        `
+      },
+      {
+        id: 2,
+        slug: "7-tips-memilih-travel-umroh-resmi-kemenag",
+        featured: false,
+        category: "Persiapan Umrah",
+        title: "7 Tips Penting Memilih Travel Umroh Resmi & Terpercaya 2026",
+        imgSrc: "https://images.unsplash.com/photo-1527838832700-5059252407fa?auto=format&fit=crop&w=800&q=80",
+        summary: "Hindari risiko penipuan travel umroh bodong dengan memahami kriteria 5 Pasti Umroh Kemenag RI, kepastian izin PPIU, dan jaminan penerbangan direct flight.",
+        date: "20 Juli 2026",
+        author: "H. Muhammad Siddiq, SE.",
+        readTime: "5 Menit Baca",
+        tags: ["tips travel", "travel resmi", "kemenag", "ppiu"],
+        content: `
+          <p class="lead">Maraknya penipuan travel umroh berbiaya murah yang tidak rasional menuntut calon jamaah untuk ekstra bijak dan waspada sebelum mendaftar.</p>
+
+          <h2 id="rumus-5-pasti">Rumus 5 Pasti Umroh Kemenag RI</h2>
+          <p>Kementerian Agama Republik Indonesia menetapkan standar standar perlindungan jamaah:</p>
+          <ol>
+            <li><strong>Pasti Travelnya:</strong> Memiliki izin PPIU resmi dari Kemenag RI.</li>
+            <li><strong>Pasti Jadwalnya:</strong> Kepastian tiket pesawat pulang-pergi.</li>
+            <li><strong>Pasti Harganya:</strong> Harga wajar tanpa biaya terselubung.</li>
+            <li><strong>Pasti Hotelnya:</strong> Nama dan lokasi hotel berbintang yang jelas.</li>
+            <li><strong>Pasti Visanya:</strong> Visa resmi terkonfirmasi dari Kedutaan Arab Saudi.</li>
+          </ol>
+
+          <div class="tips-box">
+            <div class="tips-box-title"><i class="fas fa-shield-alt"></i> Tips Keamanan:</div>
+            Selalu cek nomor izin PPIU travel di aplikasi SIMPUH resmi Kemenag RI sebelum menyetorkan uang DP.
+          </div>
+
+          <h2 id="kesimpulan-travel">Kesimpulan</h2>
+          <p>Pilihlah travel berpengalaman seperti AS-SIDDIQ yang memberikan jaminan kepastian penerbangan direct flight dan akomodasi hotel bintang 5.</p>
+        `
+      },
+      {
+        id: 3,
+        slug: "persiapan-fisik-mental-haji-furoda",
+        featured: false,
+        category: "Persiapan Umrah",
+        title: "Persiapan Fisik, Mental, dan Persyaratan Administrasi Haji Furoda 2026",
+        imgSrc: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=800&q=80",
+        summary: "Panduan lengkap persiapan menunaikan ibadah Haji Furoda tanpa antri dengan Visa Mujamalah, mencakup syarat paspor, kebugaran fisik, dan manasik.",
+        date: "18 Juli 2026",
+        author: "Ustadz Farhan Basalamah, Lc.",
+        readTime: "6 Menit Baca",
+        tags: ["haji furoda", "visa mujamalah", "persiapan haji"],
+        content: `
+          <p class="lead">Haji Furoda merupakan solusi terbaik bagi masyarakat yang ingin menunaikan ibadah rukun Islam kelima tanpa antrian bertahun-tahun.</p>
+
+          <h2 id="keutamaan-furoda">Keutamaan Haji Furoda</h2>
+          <p>Menggunakan Visa Mujamalah Stamp resmi undangan Kerajaan Arab Saudi, jamaah mendapatkan fasilitas tenda AC Maktab VIP di Armuzna.</p>
+
+          <div class="tips-box">
+            <div class="tips-box-title"><i class="fas fa-heartbeat"></i> Tips Kebugaran:</div>
+            Lakukan latihan jalan kaki rutin 30 menit setiap pagi 2 bulan sebelum keberangkatan untuk menghadapi iklim Makkah.
+          </div>
+
+          <h2 id="kesimpulan-haji">Kesimpulan</h2>
+          <p>Mempersiapkan fisik dan dokumen haji furoda sejak dini memastikan ibadah berjalan lancar dan mabrur.</p>
+        `
+      },
+      {
+        id: 4,
+        slug: "keutamaan-shalat-di-riadah-masjid-nabawi",
+        featured: false,
+        category: "Doa & Manasik",
+        title: "Keutamaan dan Tata Cara Masuk Raudhah Masjid Nabawi Madinah",
+        imgSrc: "assets/orangsholat.png",
+        summary: "Mengenal Raudhah yang dijuluki Taman Surga di bumi, panduan izin Tasrih resmi, serta amalan doa yang disunnahkan saat berada di Raudhah.",
+        date: "15 Juli 2026",
+        author: "Ustadz H. Ahmad Ridwan, M.A.",
+        readTime: "5 Menit Baca",
+        tags: ["raudhah", "masjid nabawi", "madinah", "ziarah"],
+        content: `
+          <p class="lead">Raudhah adalah area mulia di antara mimbar dan makam Rasulullah SAW di dalam Masjid Nabawi Madinah Munawwarah.</p>
+
+          <h2 id="hadits-raudhah">Keutamaan Raudhah Sesuai Hadits</h2>
+          <p>Rasulullah SAW bersabda: <em>"Antara rumahku dan mimbarku adalah salah satu taman dari taman-taman surga."</em> (HR. Bukhari & Muslim).</p>
+
+          <h2 id="kesimpulan-raudhah">Kesimpulan</h2>
+          <p>Manfaatkan kesempatan berada di Raudhah dengan berdoa dan memohon ampunan sepenuh hati.</p>
+        `
+      },
+      {
+        id: 5,
+        slug: "tips-menjaga-kesehatan-saat-umroh-musim-dingin",
+        featured: false,
+        category: "Tips Perjalanan",
+        title: "Tips Efektif Menjaga Kesehatan Jamaah Saat Umroh Musim Dingin",
+        imgSrc: "assets/pemandanganhaji.png",
+        summary: "Menghadapi perubahan cuaca ekstrem di Arab Saudi. Perlengkapan jaket, pelembab kulit, asupan suplemen vitamin, serta hidrasi yang cukup.",
+        date: "12 Juli 2026",
+        author: "Hj. Nurul Hidayah, S.Psi.",
+        readTime: "4 Menit Baca",
+        tags: ["kesehatan", "musim dingin", "tips umroh"],
+        content: `
+          <p class="lead">Suhu udara di Madinah saat musim dingin bisa mencapai di bawah 10 derajat Celcius pada malam dan subuh hari.</p>
+
+          <div class="tips-box">
+            <div class="tips-box-title"><i class="fas fa-medkit"></i> Tips Kesehatan:</div>
+            Selalu gunakan lip balm dan pelembab kulit untuk mencegah bibir dan kulit pecah-pecah akibat angin kering.
+          </div>
+        `
+      },
+      {
+        id: 6,
+        slug: "cerita-haru-jamaah-lansia-mencapai-kabah",
+        featured: false,
+        category: "Cerita Jamaah",
+        title: "Kisah Haru Mbah Maimunah (78 Tahun) Akhirnya Menyentuh Ka'bah",
+        imgSrc: "assets/mbahmaimunah.jpeg",
+        summary: "Perjalanan perjuangan menabung selama 20 tahun yang berbuah manis. Pendampingan penuh kasih sayang dari tim Mutawwif AS-SIDDIQ.",
+        date: "10 Juli 2026",
+        author: "Tim Redaksi AS-SIDDIQ",
+        readTime: "6 Menit Baca",
+        tags: ["cerita jamaah", "kisah haru", "lansia"],
+        content: `
+          <p class="lead">Air mata bahagia tak terbendung di pipi Mbah Maimunah saat jemarinya pertama kali menyentuh kain Kiswah Ka'bah.</p>
+
+          <h2 id="kisah-perjuangan">Menabung Dari Hasil Menjual Kerajinan</h2>
+          <p>Dengan ketekunan menabung sedikit demi sedikit, impian suci menuju Tanah Suci akhirnya diijabah Allah SWT.</p>
+        `
+      }
+    ];
+
+    let currentCategory = "Semua";
+    let searchQuery = "";
+    let visibleCount = 6;
+
+    document.addEventListener("DOMContentLoaded", function () {
+      initBlogPortal();
+    });
+
+    function initBlogPortal() {
+      renderFeaturedArticle();
+      renderArticlesGrid();
+
+      const filterPills = document.querySelectorAll(".blog-filter-pill");
+      filterPills.forEach(pill => {
+        pill.addEventListener("click", function () {
+          filterPills.forEach(p => p.classList.remove("active"));
+          this.classList.add("active");
+          currentCategory = this.getAttribute("data-category");
+          visibleCount = 6;
+          renderArticlesGrid();
+        });
+      });
+
+      const searchInput = document.getElementById("blogSearchInput");
+      if (searchInput) {
+        searchInput.addEventListener("input", function (e) {
+          searchQuery = e.target.value.toLowerCase().trim();
+          visibleCount = 6;
+          renderArticlesGrid();
+        });
+      }
+
+      const btnLoadMore = document.getElementById("btnLoadMore");
+      if (btnLoadMore) {
+        btnLoadMore.addEventListener("click", function () {
+          visibleCount += 3;
+          renderArticlesGrid();
+        });
+      }
+
+      const btnBackToBlog = document.getElementById("btnBackToBlog");
+      if (btnBackToBlog) {
+        btnBackToBlog.addEventListener("click", function () {
+          document.getElementById("blogDetailView").classList.add("d-none");
+          document.getElementById("blogListView").classList.remove("d-none");
+          window.scrollTo({ top: 400, behavior: 'smooth' });
+        });
+      }
+    }
+
+    function renderFeaturedArticle() {
+      const container = document.getElementById("featuredArticleContainer");
+      const featured = articlesData.find(a => a.featured) || articlesData[0];
+      if (!featured || !container) return;
+
+      container.innerHTML = `
+        <div class="featured-article-card">
+          <div class="row g-0 align-items-center">
+            <div class="col-lg-6">
+              <div class="overflow-hidden h-100">
+                <img src="${featured.imgSrc}" alt="${featured.title}" class="featured-article-img w-100">
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="featured-article-body">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                  <span class="badge bg-warning text-dark font-weight-bold px-3 py-1.5"><i class="fas fa-star me-1"></i> ARTIKEL UNGGULAN</span>
+                  <span class="badge bg-success px-3 py-1.5">${featured.category}</span>
+                </div>
+                <h2 class="h3 font-weight-bold mb-3 text-dark">${featured.title}</h2>
+                <p class="text-muted small mb-3 line-clamp-3">${featured.summary}</p>
+                <div class="d-flex align-items-center gap-3 text-muted small mb-4">
+                  <span><i class="far fa-calendar-alt text-warning me-1"></i> ${featured.date}</span>
+                  <span><i class="far fa-clock text-warning me-1"></i> ${featured.readTime}</span>
+                </div>
+                <button type="button" class="btn btn-success px-4 py-2.5 rounded-pill font-weight-bold shadow-sm me-auto" onclick="openArticleDetail(${featured.id})">
+                  Baca Selengkapnya <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderArticlesGrid() {
+      const grid = document.getElementById("articlesGrid");
+      const notice = document.getElementById("noResultsNotice");
+      const loadMoreWrapper = document.getElementById("loadMoreWrapper");
+      if (!grid) return;
+
+      let filtered = articlesData.filter(item => {
+        const matchesCategory = (currentCategory === "Semua" || item.category === currentCategory);
+        const matchesSearch = searchQuery === "" || 
+          item.title.toLowerCase().includes(searchQuery) || 
+          item.category.toLowerCase().includes(searchQuery) || 
+          item.summary.toLowerCase().includes(searchQuery) ||
+          (item.tags && item.tags.some(tag => tag.toLowerCase().includes(searchQuery)));
+        return matchesCategory && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        grid.innerHTML = "";
+        notice.classList.remove("d-none");
+        if (loadMoreWrapper) loadMoreWrapper.classList.add("d-none");
+        return;
+      } else {
+        notice.classList.add("d-none");
+      }
+
+      const displayList = filtered.slice(0, visibleCount);
+      let html = "";
+
+      displayList.forEach(article => {
+        html += `
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="blog-card" onclick="openArticleDetail(${article.id})">
+              <div class="blog-card-img-box">
+                <img src="${article.imgSrc}" alt="${article.title}">
+                <span class="blog-card-category">${article.category}</span>
+              </div>
+              <div class="blog-card-body">
+                <div class="blog-card-meta">
+                  <span><i class="far fa-calendar-alt text-warning me-1"></i> ${article.date}</span>
+                  <span><i class="far fa-clock text-warning me-1"></i> ${article.readTime}</span>
+                </div>
+                <h3 class="blog-card-title">${article.title}</h3>
+                <p class="blog-card-excerpt">${article.summary}</p>
+                <div class="blog-card-footer">
+                  <span class="small font-weight-bold text-success">Baca Selengkapnya <i class="fas fa-chevron-right ms-1"></i></span>
+                  <small class="text-muted"><i class="far fa-user me-1"></i> ${article.author.split(' ')[0]}</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      grid.innerHTML = html;
+
+      if (loadMoreWrapper) {
+        if (visibleCount >= filtered.length) {
+          loadMoreWrapper.classList.add("d-none");
+        } else {
+          loadMoreWrapper.classList.remove("d-none");
+        }
+      }
+    }
+
+    function openArticleDetail(id) {
+      const article = articlesData.find(a => a.id === id);
+      if (!article) return;
+
+      document.getElementById("detailCategory").innerText = article.category;
+      document.getElementById("detailReadTime").innerHTML = `<i class="far fa-clock text-warning me-1"></i> ${article.readTime}`;
+      document.getElementById("detailTitle").innerText = article.title;
+      document.getElementById("detailAuthor").innerText = article.author;
+      document.getElementById("detailDate").innerText = article.date;
+      document.getElementById("detailThumbnail").setAttribute("src", article.imgSrc);
+      document.getElementById("detailContent").innerHTML = article.content;
+
+      const currentUrl = encodeURIComponent(window.location.href);
+      const textTitle = encodeURIComponent(article.title);
+      document.getElementById("shareWa").href = `https://api.whatsapp.com/send?text=${textTitle}%20${currentUrl}`;
+      document.getElementById("shareFb").href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+      document.getElementById("shareTg").href = `https://t.me/share/url?url=${currentUrl}&text=${textTitle}`;
+      document.getElementById("shareIn").href = `https://www.linkedin.com/shareArticle?url=${currentUrl}`;
+
+      const tocList = document.getElementById("detailTocList");
+      const tempDiv = document.createElement("div");
+      tempDiv.innerHTML = article.content;
+      const headings = tempDiv.querySelectorAll("h2, h3");
+
+      tocList.innerHTML = "";
+      if (headings.length > 0) {
+        headings.forEach((h, idx) => {
+          const li = document.createElement("li");
+          if (h.tagName.toLowerCase() === "h3") li.style.paddingLeft = "16px";
+          const a = document.createElement("a");
+          a.href = "javascript:void(0)";
+          a.innerText = h.innerText;
+          a.onclick = function() {
+            const detailBody = document.getElementById("detailContent");
+            const targetH = detailBody.querySelectorAll("h2, h3")[idx];
+            if (targetH) {
+              targetH.scrollIntoView({ behavior: "smooth", block: "center" });
+            }
+          };
+          li.appendChild(a);
+          tocList.appendChild(li);
+        });
+        document.querySelector(".toc-box").style.display = "block";
+      } else {
+        document.querySelector(".toc-box").style.display = "none";
+      }
+
+      const related = articlesData.filter(a => a.id !== id).slice(0, 3);
+      let relatedHtml = "";
+      related.forEach(r => {
+        relatedHtml += `
+          <div class="d-flex gap-3 mb-3 pb-3 border-bottom" style="cursor: pointer; user-select: none;" onclick="openArticleDetail(${r.id})">
+            <img src="${r.imgSrc}" alt="${r.title}" class="rounded-3" style="width: 75px; height: 75px; object-fit: cover; flex-shrink:0;">
+            <div>
+              <h6 class="font-weight-bold mb-1 text-dark line-clamp-2" style="font-size: 0.88rem;">${r.title}</h6>
+              <small class="text-muted d-block mb-1">${r.date}</small>
+              <span class="small text-success font-weight-bold" style="cursor: pointer;">Baca <i class="fas fa-arrow-right ms-1"></i></span>
+            </div>
+          </div>
+        `;
+      });
+      document.getElementById("relatedArticlesContainer").innerHTML = relatedHtml;
+
+      document.getElementById("blogListView").classList.add("d-none");
+      document.getElementById("blogDetailView").classList.remove("d-none");
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

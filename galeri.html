@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto & Dokumentasi - PT AS-SIDDIQ Tour & Travel</title>
+  <meta name="description" content="Dokumentasi foto dan video keberangkatan jamaah Umroh dan Haji AS-SIDDIQ di Makkah, Madinah, Masjidil Haram, Masjid Nabawi, dan akomodasi hotel bintang 5.">
+  <link rel="canonical" href="https://as-siddiqtravel.com/galeri.html">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body class="bg-islamic-pattern">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-assiddiq fixed-top" aria-label="Navigasi Utama">
+    <div class="container">
+      <a class="navbar-brand navbar-brand-logo" href="index.html">
+        <div class="logo-badge-icon">
+          <i class="fas fa-kaaba"></i>
+        </div>
+        <div>
+          <div class="brand-text-main">AS-SIDDIQ</div>
+          <div class="brand-text-sub">HAJI & UMROH PREMIUM</div>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html"><i class="fas fa-home me-1"></i> Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="tentang.html"><i class="fas fa-landmark me-1"></i> Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="paket.html"><i class="fas fa-box-open me-1"></i> Paket Haji & Umrah</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="galeri.html"><i class="fas fa-images me-1"></i> Galeri</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="artikel.html"><i class="fas fa-newspaper me-1"></i> Artikel</a>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center">
+          <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20CS%20AS-SIDDIQ,%20saya%20ingin%20mendaftar%20paket%20Umroh/Haji" target="_blank" class="btn btn-nav-wa">
+            <i class="fab fa-whatsapp"></i> Daftar Sekarang
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HERO HEADER -->
+  <section class="page-hero-section text-center">
+    <div class="container position-relative" style="z-index: 2;">
+      <nav aria-label="breadcrumb" class="d-flex justify-content-center mb-3">
+        <ol class="breadcrumb bg-transparent p-0 m-0 text-white-50 small">
+          <li class="breadcrumb-item"><a href="index.html" class="text-warning">Beranda</a></li>
+          <li class="breadcrumb-item active text-white" aria-current="page">Galeri Foto & Dokumentasi</li>
+        </ol>
+      </nav>
+      <h1 class="display-4 font-weight-bold mb-2">Galeri Keberkahan Jamaah AS-SIDDIQ</h1>
+      <p class="lead text-light opacity-90 max-w-700 mx-auto">
+        Kumpulan foto dokumentasi resmi, kebersamaan, dan kekhusyukan jamaah kami selama menunaikan ibadah suci Haji & Umroh di Tanah Suci.
+      </p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION (PAJANGAN MODEL - NO POPUP MODAL, DESKRIPSI JELAS) -->
+  <section class="py-5 bg-white">
+    <div class="container">
+      
+      <!-- Filter Controls -->
+      <div class="gallery-filter-wrapper mb-5" data-aos="fade-up">
+        <div class="d-flex flex-wrap justify-content-center gap-2">
+          <button type="button" class="gallery-filter-btn active" data-filter="all">
+            <i class="fas fa-th-large me-2"></i>Semua Foto
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="keberangkatan">
+            <i class="fas fa-plane-departure me-2"></i>Keberangkatan
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="hotel">
+            <i class="fas fa-hotel me-2"></i>Hotel Bintang 5
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="nabawi">
+            <i class="fas fa-mosque me-2"></i>Masjid Nabawi
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="haram">
+            <i class="fas fa-kaaba me-2"></i>Masjidil Haram
+          </button>
+          <button type="button" class="gallery-filter-btn" data-filter="kegiatan">
+            <i class="fas fa-users me-2"></i>Kegiatan Jamaah
+          </button>
+        </div>
+      </div>
+
+      <!-- Photo Grid Pajangan -->
+      <div class="row g-4" id="galleryGrid">
+        
+        <!-- Foto 1 -->
+        <div class="col-lg-4 col-md-6 gallery-item-wrapper" data-category="haram" data-aos="fade-up" data-aos-delay="100">
+          <div class="gallery-pajangan-card">
+            <div class="gallery-pajangan-img-box">
+              <img src="assets/orangthawaf.jpeg" alt="Thawaf di Pelataran Ka'bah">
+              <span class="gallery-pajangan-badge">Masjidil Haram</span>
+            </div>
+            <div class="gallery-pajangan-body">
+              <h3 class="gallery-pajangan-title">Thawaf Mengelilingi Ka'bah</h3>
+              <p class="gallery-pajangan-caption">Jamaah AS-SIDDIQ melaksanakan ibadah Thawaf dengan khusyuk didampingi Mutawwif senior lulusan Universitas Islam Madinah.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 2 -->
+        <div class="col-lg-4 col-md-6 gallery-item-wrapper" data-category="nabawi" data-aos="fade-up" data-aos-delay="200">
+          <div class="gallery-pajangan-card">
+            <div class="gallery-pajangan-img-box">
+              <img src="assets/payungraksasamekkah.jpeg" alt="Masjid Nabawi Madinah">
+              <span class="gallery-pajangan-badge">Masjid Nabawi</span>
+            </div>
+            <div class="gallery-pajangan-body">
+              <h3 class="gallery-pajangan-title">Payung Raksasa Masjid Nabawi</h3>
+              <p class="gallery-pajangan-caption">Suasana senja indah jamaah berkumpul menunggu shalat Maghrib berjamaah di pelataran utama Masjid Nabawi Madinah.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 3 -->
+        <div class="col-lg-4 col-md-6 gallery-item-wrapper" data-category="keberangkatan" data-aos="fade-up" data-aos-delay="300">
+          <div class="gallery-pajangan-card">
+            <div class="gallery-pajangan-img-box">
+              <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=600&q=80" alt="Pelepasan Jamaah di Bandara">
+              <span class="gallery-pajangan-badge">Keberangkatan</span>
+            </div>
+            <div class="gallery-pajangan-body">
+              <h3 class="gallery-pajangan-title">Pelepasan Jamaah Bandara</h3>
+              <p class="gallery-pajangan-caption">Foto bersama rombongan jamaah AS-SIDDIQ sebelum pengarahan & boarding pesawat Garuda Indonesia Direct Jeddah.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 4 -->
+        <div class="col-lg-4 col-md-6 gallery-item-wrapper" data-category="hotel" data-aos="fade-up" data-aos-delay="400">
+          <div class="gallery-pajangan-card">
+            <div class="gallery-pajangan-img-box">
+              <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=600&q=80" alt="Hotel Pullman Zamzam Makkah">
+              <span class="gallery-pajangan-badge">Hotel Bintang 5</span>
+            </div>
+            <div class="gallery-pajangan-body">
+              <h3 class="gallery-pajangan-title">View Haram dari Kamar Hotel</h3>
+              <p class="gallery-pajangan-caption">Fasilitas akomodasi Hotel Pullman Zamzam Clock Tower Makkah dengan panorama indah langsung menghadap pelataran Ka'bah.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 5 -->
+        <div class="col-lg-4 col-md-6 gallery-item-wrapper" data-category="kegiatan" data-aos="fade-up" data-aos-delay="500">
+          <div class="gallery-pajangan-card">
+            <div class="gallery-pajangan-img-box">
+              <img src="assets/orangziarah.png" alt="Ziarah Jabal Uhud">
+              <span class="gallery-pajangan-badge">Kegiatan Jamaah</span>
+            </div>
+            <div class="gallery-pajangan-body">
+              <h3 class="gallery-pajangan-title">Ziarah Sejarah Jabal Uhud</h3>
+              <p class="gallery-pajangan-caption">Kajian sirah nabawiyah mengenai Perang Uhud bersama Pembimbing Ibadah di lokasi bukit pemanah Madinah Munawwarah.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Foto 6 -->
+        <div class="col-lg-4 col-md-6 gallery-item-wrapper" data-category="kegiatan" data-aos="fade-up" data-aos-delay="600">
+          <div class="gallery-pajangan-card">
+            <div class="gallery-pajangan-img-box">
+              <img src="assets/orangumroh.png" alt="Manasik Umroh Intensif">
+              <span class="gallery-pajangan-badge">Kegiatan Jamaah</span>
+            </div>
+            <div class="gallery-pajangan-body">
+              <h3 class="gallery-pajangan-title">Praktek Manasik Umroh</h3>
+              <div class="gallery-pajangan-caption">Bimbingan simulasi tata cara Thawaf dan Sa'i sesuai tuntunan Al-Qur'an dan Sunnah shahih sebelum keberangkatan.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-assiddiq">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <div class="logo-badge-icon">
+              <i class="fas fa-kaaba"></i>
+            </div>
+            <span class="fs-4 font-weight-bold text-white font-arabic">AS-SIDDIQ TRAVEL</span>
+          </div>
+          <p class="small text-light opacity-75 mb-3">
+            PT AS-SIDDIQ Tour & Travel adalah Penyelenggara Perjalanan Ibadah Umrah (PPIU) resmi berizin Kemenag RI No. 412/2021. Berpengalaman melayani ribuan jamaah Indonesia sejak 2012.
+          </p>
+          <div class="d-flex">
+            <a href="https://wa.me/6281234567890" target="_blank" class="social-icon-btn" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://facebook.com" target="_blank" class="social-icon-btn" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <h4 class="footer-title">Menu Cepat</h4>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right small text-warning"></i> Beranda</a></li>
+            <li><a href="tentang.html"><i class="fas fa-chevron-right small text-warning"></i> Tentang Kami</a></li>
+            <li><a href="paket.html"><i class="fas fa-chevron-right small text-warning"></i> Paket Haji & Umroh</a></li>
+            <li><a href="galeri.html"><i class="fas fa-chevron-right small text-warning"></i> Galeri Foto & Video</a></li>
+            <li><a href="artikel.html"><i class="fas fa-chevron-right small text-warning"></i> Artikel & Panduan</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Paket Favorit</h4>
+          <ul class="footer-links">
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Umroh Reguler Bintang 5</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Umroh Plus Turki Cappadokia</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Umroh Plus Dubai</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Haji Khusus VVIP Kuota Resmi</a></li>
+            <li><a href="paket.html"><i class="fas fa-star text-warning"></i> Haji Furoda Visa Mujamalah</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4 class="footer-title">Kontak & Jam Buka</h4>
+          <p class="small mb-2"><i class="fas fa-map-marker-alt text-warning me-2"></i> Jl. Raya Boulevard Barat No. 88, Kelapa Gading, Jakarta Utara</p>
+          <p class="small mb-2"><i class="fas fa-phone text-warning me-2"></i> +62 812-3456-7890</p>
+          <p class="small mb-2"><i class="fas fa-envelope text-warning me-2"></i> info@as-siddiqtravel.com</p>
+          <p class="small mb-0"><i class="fas fa-clock text-warning me-2"></i> Senin - Sabtu (08.00 - 17.00 WIB)</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="mb-0">Hak Cipta &copy; 2026 PT AS-SIDDIQ Tour & Travel Haji & Umroh. Seluruh Hak Cipta Dilindungi Undang-Undang.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING CONTAINER -->
+  <div class="floating-container">
+    <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20CS%20AS-SIDDIQ,%20saya%20inikin%20bertanya" target="_blank" class="btn-floating-wa" aria-label="Chat WhatsApp AS-SIDDIQ">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <button id="scrollTopBtn" class="btn-scroll-top" aria-label="Scroll to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
