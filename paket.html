@@ -325,11 +325,19 @@
 
   <!-- INTEGRATED PACKAGE DETAIL MODAL -->
   <div class="modal fade" id="packageDetailModal" tabindex="-1" aria-labelledby="modalPackageTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content rounded-4 overflow-hidden border-0 shadow-lg">
-        <div class="modal-header bg-success text-white border-bottom border-warning border-3">
-          <h5 class="modal-title font-weight-bold" id="modalPackageTitle">Detail Paket</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" style="margin-top: 80px; max-height: calc(100vh - 100px);">
+      <div class="modal-content rounded-4 overflow-hidden border-0 shadow-lg position-relative">
+        <!-- CLOSE BUTTON - always visible, black circle -->
+        <button type="button" class="btn d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close"
+          style="position:absolute;top:12px;right:12px;z-index:10;width:34px;height:34px;border-radius:50%;background:#000;color:#fff;font-size:1rem;border:2px solid #333;box-shadow:0 2px 8px rgba(0,0,0,0.3);opacity:0.85;transition:all 0.2s;"
+          onmouseover="this.style.opacity='1';this.style.transform='scale(1.1)'" onmouseout="this.style.opacity='0.85';this.style.transform='scale(1)'">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header border-bottom border-warning border-3 pe-5" style="background: linear-gradient(135deg, #0F766E 0%, #0D5C56 100%);">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fas fa-box-open text-warning"></i>
+            <h5 class="modal-title font-weight-bold text-white" id="modalPackageTitle">Detail Paket</h5>
+          </div>
         </div>
         <div class="modal-body p-4">
           <div class="row g-4 mb-3">

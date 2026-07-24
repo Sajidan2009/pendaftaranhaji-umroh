@@ -423,7 +423,7 @@ img, iframe, video {
   position: relative;
   background: var(--dark-gradient);
   padding: 130px 0 55px 0;
-  color: var(--text-white);
+  color: #FFFFFF;
   border-bottom: 3px solid var(--secondary);
   overflow: hidden;
 }
@@ -434,6 +434,17 @@ img, iframe, video {
   inset: 0;
   background-image: radial-gradient(rgba(212, 175, 55, 0.12) 1.5px, transparent 1.5px);
   background-size: 20px 20px;
+}
+
+.page-hero-section h1 {
+  color: #FFFFFF !important;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.55), 0 1px 4px rgba(0,0,0,0.35);
+  letter-spacing: -0.5px;
+}
+
+.page-hero-section p {
+  color: rgba(255,255,255,0.95) !important;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.4);
 }
 
 /* --------------------------------------------------------------------------
@@ -814,7 +825,7 @@ img, iframe, video {
   background: rgba(240, 253, 250, 0.7);
   border: 1px solid rgba(15, 118, 110, 0.15);
   padding: 0.85rem 1.25rem;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 0 4px 18px rgba(15, 118, 110, 0.06);
 }
 
@@ -831,6 +842,8 @@ img, iframe, video {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   display: inline-flex;
   align-items: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .gallery-filter-btn i {
@@ -855,6 +868,44 @@ img, iframe, video {
 
 .gallery-filter-btn.active i {
   color: var(--secondary-light) !important;
+}
+
+/* Stat item cards */
+.stat-item {
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(212,175,55,0.35);
+  border-radius: var(--radius-md);
+  padding: 1.1rem 0.75rem;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  transition: var(--transition-fast);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.stat-item:hover {
+  transform: translateY(-4px);
+  border-color: var(--secondary);
+  box-shadow: 0 8px 24px rgba(212,175,55,0.2);
+}
+
+.stat-number {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.stat-number span {
+  color: var(--secondary);
+}
+
+.stat-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
 }
 
 /* --------------------------------------------------------------------------

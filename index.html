@@ -140,38 +140,6 @@
     </div>
   </section>
 
-  <!-- STATISTICS BAR -->
-  <div class="container">
-    <div class="stats-bar" data-aos="fade-up" data-aos-delay="100">
-      <div class="row g-4">
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <div class="stat-number">15.000<span>+</span></div>
-            <div class="stat-label">Jamaah Diberangkatkan</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <div class="stat-number">98<span>%</span></div>
-            <div class="stat-label">Tingkat Kepuasan</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <div class="stat-number">100<span>%</span></div>
-            <div class="stat-label">Resmi Kemenag RI</div>
-          </div>
-        </div>
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <div class="stat-number">14<span>+</span></div>
-            <div class="stat-label">Tahun Pengalaman</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <!-- SINGKAT CERITA -->
   <section class="py-5 my-4">
     <div class="container">
@@ -582,8 +550,8 @@
   <section class="py-5 bg-pattern-dark text-white text-center position-relative">
     <div class="container py-4 position-relative" style="z-index: 2;">
       <i class="fas fa-kaaba fa-3x text-warning mb-3" data-aos="zoom-in"></i>
-      <h2 class="display-5 font-weight-bold mb-3">Siap Mewujudkan Niat Suci Anda ke Tanah Suci?</h2>
-      <p class="lead max-w-700 mx-auto text-light opacity-90 mb-4">
+      <h2 class="display-5 font-weight-bold mb-3" style="color: #FFFFFF; text-shadow: 0 2px 12px rgba(0,0,0,0.4);">Siap Mewujudkan Niat Suci Anda ke Tanah Suci?</h2>
+      <p class="lead max-w-700 mx-auto mb-4" style="color: rgba(255,255,255,0.95); text-shadow: 0 1px 6px rgba(0,0,0,0.3);">
         Jangan tunda niat mulia Anda. Konsultasikan jadwal keberangkatan dan pilihan paket terbaik bersama Tim Customer Advisor AS-SIDDIQ hari ini.
       </p>
       <a href="https://wa.me/6281234567890?text=Assalamu'alaikum%20Saya%20ingin%20mendaftar%20paket%20Umroh/Haji" target="_blank" class="btn btn-warning btn-lg px-5 py-3 rounded-pill font-weight-bold text-dark shadow-gold">
@@ -707,11 +675,19 @@
 
   <!-- INTEGRATED PACKAGE DETAIL MODAL -->
   <div class="modal fade" id="packageDetailModal" tabindex="-1" aria-labelledby="modalPackageTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-centered">
-      <div class="modal-content rounded-4 overflow-hidden border-0 shadow-lg">
-        <div class="modal-header bg-success text-white border-bottom border-warning border-3">
-          <h5 class="modal-title font-weight-bold" id="modalPackageTitle">Detail Paket</h5>
-          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-lg modal-dialog-scrollable" style="margin-top: 80px; max-height: calc(100vh - 100px);">
+      <div class="modal-content rounded-4 overflow-hidden border-0 shadow-lg position-relative">
+        <!-- CLOSE BUTTON - always visible, black circle -->
+        <button type="button" class="btn d-flex align-items-center justify-content-center" data-bs-dismiss="modal" aria-label="Close"
+          style="position:absolute;top:12px;right:12px;z-index:10;width:34px;height:34px;border-radius:50%;background:#000;color:#fff;font-size:1rem;border:2px solid #333;box-shadow:0 2px 8px rgba(0,0,0,0.3);opacity:0.85;transition:all 0.2s;"
+          onmouseover="this.style.opacity='1';this.style.transform='scale(1.1)'" onmouseout="this.style.opacity='0.85';this.style.transform='scale(1)'">
+          <i class="fas fa-times"></i>
+        </button>
+        <div class="modal-header border-bottom border-warning border-3 pe-5" style="background: linear-gradient(135deg, #0F766E 0%, #0D5C56 100%);">
+          <div class="d-flex align-items-center gap-2">
+            <i class="fas fa-box-open text-warning"></i>
+            <h5 class="modal-title font-weight-bold text-white" id="modalPackageTitle">Detail Paket</h5>
+          </div>
         </div>
         <div class="modal-body p-4">
           <div class="row g-4 mb-3">
