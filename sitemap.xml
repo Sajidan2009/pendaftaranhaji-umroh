@@ -1,33 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- BERANDA (Highest Priority) -->
   <url>
-    <loc>https://as-siddiqtravel.com/index.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://as-siddiq.vercel.app/</loc>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://as-siddiq.vercel.app/assets/pemandanganhaji.png</image:loc>
+      <image:title>AS-SIDDIQ Travel Haji dan Umroh - Beranda</image:title>
+    </image:image>
   </url>
+
+  <!-- PAKET (High Priority - Conversion Page) -->
   <url>
-    <loc>https://as-siddiqtravel.com/tentang.html</loc>
-    <lastmod>2026-07-22</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://as-siddiqtravel.com/paket.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://as-siddiq.vercel.app/paket.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://as-siddiq.vercel.app/assets/oranghaji.png</image:loc>
+      <image:title>Paket Umroh dan Haji 2026 AS-SIDDIQ Travel</image:title>
+    </image:image>
   </url>
+
+  <!-- DETAIL PAKET -->
   <url>
-    <loc>https://as-siddiqtravel.com/galeri.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://as-siddiq.vercel.app/detail-paket.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.85</priority>
   </url>
+
+  <!-- ARTIKEL (Frequent Content Updates) -->
   <url>
-    <loc>https://as-siddiqtravel.com/artikel.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://as-siddiq.vercel.app/artikel.html</loc>
+    <lastmod>2026-07-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://as-siddiq.vercel.app/assets/masjidmadinah.jpg</image:loc>
+      <image:title>Artikel dan Tips Umroh Haji AS-SIDDIQ Travel</image:title>
+    </image:image>
   </url>
+
+  <!-- DETAIL ARTIKEL -->
+  <url>
+    <loc>https://as-siddiq.vercel.app/detail-artikel.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- TENTANG -->
+  <url>
+    <loc>https://as-siddiq.vercel.app/tentang.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://as-siddiq.vercel.app/assets/landingpagehaji.png</image:loc>
+      <image:title>Tentang PT AS-SIDDIQ Tour dan Travel</image:title>
+    </image:image>
+  </url>
+
+  <!-- GALERI -->
+  <url>
+    <loc>https://as-siddiq.vercel.app/galeri.html</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.65</priority>
+    <image:image>
+      <image:loc>https://as-siddiq.vercel.app/assets/pemandanganhaji.png</image:loc>
+      <image:title>Galeri Foto Jamaah Umroh Haji AS-SIDDIQ</image:title>
+    </image:image>
+  </url>
+
 </urlset>

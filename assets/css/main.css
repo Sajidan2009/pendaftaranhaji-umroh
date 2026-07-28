@@ -70,7 +70,7 @@ body {
   line-height: 1.6;
 }
 
-section, header, footer, main, div, p, h1, h2, h3, h4, h5, h6 {
+section, header, footer, main, p, h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
   word-wrap: break-word;
   overflow-wrap: break-word;
@@ -79,20 +79,21 @@ section, header, footer, main, div, p, h1, h2, h3, h4, h5, h6 {
 .container, .container-fluid {
   width: 100% !important;
   max-width: 1320px;
-  padding-right: 15px !important;
-  padding-left: 15px !important;
+  padding-right: 16px !important;
+  padding-left: 16px !important;
   margin-right: auto !important;
   margin-left: auto !important;
 }
 
 .row {
-  margin-right: -10px !important;
-  margin-left: -10px !important;
+  max-width: none !important;
+  margin-right: -12px !important;
+  margin-left: -12px !important;
 }
 
 .row > [class*="col-"] {
-  padding-right: 10px !important;
-  padding-left: 10px !important;
+  padding-right: 12px !important;
+  padding-left: 12px !important;
 }
 
 h1, h2, h3, h4, h5, h6, .font-arabic {
@@ -844,6 +845,8 @@ img, iframe, video {
   align-items: center;
   width: 100%;
   justify-content: center;
+  height: 44px;        /* tinggi seragam di semua layar */
+  min-width: 140px;    /* lebar minimal di desktop agar seragam */
 }
 
 .gallery-filter-btn i {
@@ -1170,4 +1173,358 @@ img, iframe, video {
   .floating-container { bottom: 14px; right: 14px; }
   .btn-floating-wa { width: 50px; height: 50px; font-size: 1.6rem; }
   .btn-scroll-top { width: 42px; height: 42px; font-size: 1rem; }
+
+  /* ── Hero section: buttons proporsional di mobile ── */
+  .hero-section .d-flex.flex-wrap {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0.75rem !important;
+  }
+  .hero-section .d-flex.flex-wrap .btn {
+    width: 100% !important;
+    font-size: 0.9rem !important;
+    padding: 0.75rem 1rem !important;
+    justify-content: center;
+  }
+
+  /* ── Modal: button Pesan Sekarang proporsional di mobile ── */
+  #modalWaLink {
+    font-size: 0.88rem !important;
+    padding: 0.7rem 1rem !important;
+  }
+
+  /* ── CTA banner: button Daftar Umroh/Haji proporsional di mobile ── */
+  .bg-pattern-dark .btn {
+    font-size: 0.9rem !important;
+    padding: 0.75rem 1.5rem !important;
+    white-space: normal !important;
+    width: auto !important;
+    max-width: 100% !important;
+  }
+}
+/* ==========================================================================
+   HERO SECTION — DESKTOP ALIGNMENT (Left-Aligned, Not Centered)
+   ========================================================================== */
+
+/* Desktop: hero row starts from left, not centered */
+@media (min-width: 992px) {
+  .hero-section .row {
+    justify-content: flex-start !important;
+  }
+  .hero-section .hero-content {
+    text-align: left !important;
+  }
+  .hero-section .badge-gold {
+    margin-left: 0 !important;
+  }
+  .hero-title {
+    font-size: 3.2rem !important;
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+  .hero-subtitle {
+    font-size: 1.15rem !important;
+    text-align: left !important;
+    margin-left: 0 !important;
+    max-width: 650px !important;
+  }
+  .hero-section .d-flex.flex-wrap {
+    justify-content: flex-start !important;
+  }
+  .hero-section .col-lg-8 {
+    text-align: left !important;
+  }
+}
+
+/* ==========================================================================
+   PARTNER CARDS — NORMAL POINTER CURSOR (NO I-BEAM TEXT CURSOR)
+   ========================================================================== */
+.partner-badge-card,
+.partner-badge-card * {
+  cursor: pointer !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+}
+
+/* ==========================================================================
+   FEATURE CARDS — PROPORTIONAL SIZING & CURSOR HOVER ANIMATION
+   ========================================================================== */
+.feature-card {
+  background: var(--bg-white);
+  border: 1px solid #E2E8F0;
+  border-radius: 18px;
+  padding: 24px 20px;
+  width: 100%;
+  min-height: 210px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 4px 16px rgba(15, 118, 110, 0.06);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  user-select: none;
+}
+
+.feature-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 32px rgba(15, 118, 110, 0.15), 0 0 0 1.5px var(--secondary);
+  border-color: var(--secondary) !important;
+}
+
+.feature-card:hover .feature-icon-box {
+  background: var(--teal-gradient) !important;
+  transform: scale(1.1) rotate(4deg);
+}
+
+.feature-card:hover .feature-icon-box i {
+  color: #FFFFFF !important;
+}
+
+.feature-icon-box {
+  width: 52px;
+  height: 52px;
+  background: var(--primary-subtle);
+  border-radius: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  transition: all 0.35s ease;
+}
+
+.feature-icon-box i {
+  font-size: 24px;
+  color: var(--primary);
+  transition: all 0.35s ease;
+}
+
+@media (max-width: 767.98px) {
+  .feature-card {
+    min-height: auto;
+    padding: 18px 16px;
+  }
+  .feature-icon-box {
+    width: 46px;
+    height: 46px;
+    margin-bottom: 12px;
+  }
+  .feature-icon-box i {
+    font-size: 20px;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE FIXES — GAMBAR TENTANG AS-SIDDIQ (index.html & tentang.html)
+   ========================================================================== */
+
+/* Desktop: foto landingpagehaji.png di index.html — tinggi seragam & animasi hover */
+.about-section-img {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 16px;
+  display: block;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.about-section-img:hover {
+  transform: scale(1.03) translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 118, 110, 0.25) !important;
+}
+
+/* Desktop: foto 2-kolom di tentang.html — ukuran persis sama, proporsional, & ada animasi hover */
+.tentang-history-img-wrap {
+  width: 100%;
+  height: 380px;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.tentang-history-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.tentang-history-img-wrap:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.22) !important;
+}
+
+.tentang-history-img-wrap:hover img {
+  transform: scale(1.08);
+}
+
+/* Mobile: foto tentang.html 1 ke bawah (stacked) & landingpagehaji.png proporsional */
+@media (max-width: 767.98px) {
+  .about-section-img {
+    height: 250px !important;
+    border-radius: 14px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    display: block !important;
+  }
+
+  .tentang-history-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 16px !important;
+  }
+
+  .tentang-history-img-wrap {
+    border-radius: 14px !important;
+    overflow: hidden;
+    height: 250px !important;
+    aspect-ratio: auto !important;
+    margin: 0 auto !important;
+    max-width: 100% !important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+  }
+
+  .tentang-history-img-wrap img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    border-radius: 14px !important;
+  }
+}
+
+/* ==========================================================================
+   GLOBAL SYMMETRICAL & CENTERED LAYOUT ALIGNMENT (ALL PAGES)
+   ========================================================================== */
+
+/* Equalize & center grid rows */
+.row {
+  justify-content: center;
+}
+
+/* Ensure all cards & containers maintain 100% balanced margins */
+.package-card-premium,
+.feature-card,
+.testimonial-rectangle-card,
+.gallery-pajangan-card,
+.blog-card,
+.partner-badge-card {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: 100% !important;
+}
+
+/* Mobile container edge padding balance (16px left and 16px right) */
+@media (max-width: 767.98px) {
+  .container {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  .row {
+    margin-left: -8px !important;
+    margin-right: -8px !important;
+  }
+  .row > [class*="col-"] {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  /* Keep floating WA & scroll-top buttons neatly docked on bottom right without obscuring card content */
+  .floating-container {
+    right: 14px !important;
+    bottom: 14px !important;
+  }
+}
+
+/* ==========================================================================
+   GALLERY FILTER BUTTONS — UNIFORM SIZE ON ALL SCREENS
+   ========================================================================== */
+
+/* Semua filter buttons uniform, font & padding sama */
+.gallery-filter-btn {
+  min-width: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* Mobile: filter buttons mengisi kolom 50-50, tinggi seragam */
+@media (max-width: 767.98px) {
+  .gallery-filter-wrapper .row {
+    margin-left: -4px !important;
+    margin-right: -4px !important;
+  }
+  .gallery-filter-wrapper .row > [class*="col-"] {
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+    margin-bottom: 8px;
+  }
+  .gallery-filter-btn {
+    width: 100% !important;
+    font-size: 0.82rem !important;
+    padding: 9px 8px !important;
+    border-radius: 50px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 6px !important;
+    height: 42px !important;      /* tinggi seragam */
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .gallery-filter-btn i {
+    font-size: 0.8rem !important;
+    flex-shrink: 0;
+  }
+}
+
+/* ==========================================================================
+   HERO BUTTONS — extra safety for very small screens (< 400px)
+   ========================================================================== */
+@media (max-width: 399.98px) {
+  .hero-section .btn-warning,
+  .hero-section .btn-outline-light {
+    font-size: 0.82rem !important;
+    padding: 0.65rem 0.75rem !important;
+  }
+}
+
+/* ==========================================================================
+   MODAL "PESAN SEKARANG" — proporsional & centered di mobile
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  #modalWaLink {
+    font-size: 0.9rem !important;
+    padding: 0.75rem 1rem !important;
+    white-space: normal !important;
+  }
+  .modal-dialog {
+    margin: 70px auto 16px auto !important;
+    max-width: calc(100vw - 24px) !important;
+  }
+}
+
+/* ==========================================================================
+   CTA BUTTON "DAFTAR UMROH / HAJI SEKARANG" — proporsional & centered di mobile
+   ========================================================================== */
+@media (max-width: 767.98px) {
+  .bg-pattern-dark .btn-warning.btn-lg {
+    font-size: 0.9rem !important;
+    padding: 0.75rem 1.5rem !important;
+    white-space: normal !important;
+    line-height: 1.3 !important;
+    width: auto !important;
+    max-width: 90% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
 }

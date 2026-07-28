@@ -1,4 +1,16 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://as-siddiqtravel.com/sitemap.xml
+# Blokir halaman non-konten
+Disallow: /database/
+Disallow: /php/
+Disallow: /js/
+Disallow: /css/
+Disallow: /assets/css/
+Disallow: /assets/js/
+
+# Crawl delay (opsional, sesuaikan jika diperlukan)
+Crawl-delay: 5
+
+# Sitemap
+Sitemap: https://as-siddiq.vercel.app/sitemap.xml
