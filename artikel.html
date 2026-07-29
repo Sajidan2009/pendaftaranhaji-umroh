@@ -696,71 +696,17 @@
     }
 
     function openArticleDetail(id) {
-      const article = articlesData.find(a => a.id === id);
-      if (!article) return;
-
-      document.getElementById("detailCategory").innerText = article.category;
-      document.getElementById("detailReadTime").innerHTML = `<i class="far fa-clock text-warning me-1"></i> ${article.readTime}`;
-      document.getElementById("detailTitle").innerText = article.title;
-      document.getElementById("detailAuthor").innerText = article.author;
-      document.getElementById("detailDate").innerText = article.date;
-      document.getElementById("detailThumbnail").setAttribute("src", article.imgSrc);
-      document.getElementById("detailContent").innerHTML = article.content;
-
-      const currentUrl = encodeURIComponent(window.location.href);
-      const textTitle = encodeURIComponent(article.title);
-      document.getElementById("shareWa").href = `https://api.whatsapp.com/send?text=${textTitle}%20${currentUrl}`;
-      document.getElementById("shareFb").href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
-      document.getElementById("shareTg").href = `https://t.me/share/url?url=${currentUrl}&text=${textTitle}`;
-      document.getElementById("shareIn").href = `https://www.linkedin.com/shareArticle?url=${currentUrl}`;
-
-      const tocList = document.getElementById("detailTocList");
-      const tempDiv = document.createElement("div");
-      tempDiv.innerHTML = article.content;
-      const headings = tempDiv.querySelectorAll("h2, h3");
-
-      tocList.innerHTML = "";
-      if (headings.length > 0) {
-        headings.forEach((h, idx) => {
-          const li = document.createElement("li");
-          if (h.tagName.toLowerCase() === "h3") li.style.paddingLeft = "16px";
-          const a = document.createElement("a");
-          a.href = "javascript:void(0)";
-          a.innerText = h.innerText;
-          a.onclick = function() {
-            const detailBody = document.getElementById("detailContent");
-            const targetH = detailBody.querySelectorAll("h2, h3")[idx];
-            if (targetH) {
-              targetH.scrollIntoView({ behavior: "smooth", block: "center" });
-            }
-          };
-          li.appendChild(a);
-          tocList.appendChild(li);
-        });
-        document.querySelector(".toc-box").style.display = "block";
-      } else {
-        document.querySelector(".toc-box").style.display = "none";
+      const articleUrls = {
+        1: "panduan-lengkap-tata-cara-ibadah-umroh-sesuai-sunnah-rasulullah-saw.html",
+        2: "7-tips-penting-memilih-travel-umroh-resmi-&terpercaya-2026.html",
+        3: "persiapan-fisik-mental-dan-persyaratan-administrasi-haji-furoda-2026.html",
+        4: "keutamaan-dan-tata-cara-masuk-raudhah-masjid-nabawi-madinah.html",
+        5: "tips-efektif-menjaga-kesehatan-jamaah-saat-umroh-musim-dingin.html",
+        6: "kisah-haru-mbah-maimunah-78-tahun-akhirnya-menyentuh-kabah.html"
+      };
+      if (articleUrls[id]) {
+        window.location.href = articleUrls[id];
       }
-
-      const related = articlesData.filter(a => a.id !== id).slice(0, 3);
-      let relatedHtml = "";
-      related.forEach(r => {
-        relatedHtml += `
-          <div class="d-flex gap-3 mb-3 pb-3 border-bottom" style="cursor: pointer; user-select: none;" onclick="openArticleDetail(${r.id})">
-            <img src="${r.imgSrc}" alt="${r.title}" class="rounded-3" style="width: 75px; height: 75px; object-fit: cover; flex-shrink:0;">
-            <div>
-              <h6 class="font-weight-bold mb-1 text-dark line-clamp-2" style="font-size: 0.88rem;">${r.title}</h6>
-              <small class="text-muted d-block mb-1">${r.date}</small>
-              <span class="small text-success font-weight-bold" style="cursor: pointer;">Baca <i class="fas fa-arrow-right ms-1"></i></span>
-            </div>
-          </div>
-        `;
-      });
-      document.getElementById("relatedArticlesContainer").innerHTML = relatedHtml;
-
-      document.getElementById("blogListView").classList.add("d-none");
-      document.getElementById("blogDetailView").classList.remove("d-none");
-      window.scrollTo({ top: 300, behavior: 'smooth' });
     }
   </script>
 </body>

@@ -34,22 +34,52 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- ARTIKEL (Frequent Content Updates) -->
+  <!-- ARTIKEL INDEX -->
   <url>
     <loc>https://as-siddiq.vercel.app/artikel.html</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.8</priority>
     <image:image>
-      <image:loc>https://as-siddiq.vercel.app/assets/masjidmadinah.jpg</image:loc>
+      <image:loc>https://as-siddiq.vercel.app/assets/masjidmadinah_4_11zon.webp</image:loc>
       <image:title>Artikel dan Tips Umroh Haji AS-SIDDIQ Travel</image:title>
     </image:image>
   </url>
 
-  <!-- DETAIL ARTIKEL -->
+  <!-- ARTIKEL INDIVIDUAL PAGES -->
   <url>
-    <loc>https://as-siddiq.vercel.app/detail-artikel.html</loc>
-    <lastmod>2026-07-28</lastmod>
+    <loc>https://as-siddiq.vercel.app/panduan-lengkap-tata-cara-ibadah-umroh-sesuai-sunnah-rasulullah-saw.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-siddiq.vercel.app/7-tips-penting-memilih-travel-umroh-resmi-%26terpercaya-2026.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-siddiq.vercel.app/persiapan-fisik-mental-dan-persyaratan-administrasi-haji-furoda-2026.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://as-siddiq.vercel.app/keutamaan-dan-tata-cara-masuk-raudhah-masjid-nabawi-madinah.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://as-siddiq.vercel.app/tips-efektif-menjaga-kesehatan-jamaah-saat-umroh-musim-dingin.html</loc>
+    <lastmod>2026-07-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://as-siddiq.vercel.app/kisah-haru-mbah-maimunah-78-tahun-akhirnya-menyentuh-kabah.html</loc>
+    <lastmod>2026-07-29</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.75</priority>
   </url>
